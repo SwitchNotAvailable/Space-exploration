@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+        <title>Personalized Virtual Gifts</title>
+    <link href="contact.css" rel="stylesheet" type="text/css" />
+    
+        <link href = "css/contact.css" rel = "stylesheet" type = "text/css" />
+        <script src="js/contactus.js"></script> <!--- Link to .js file -->
+        <script src="js/jquery-3.2.1.min.js"> </script>
+    </head>
+
+<body>
+    <nav>
+        <ul class="topnav">
+            <li class="first-list"><a href="home.html" target="_blank" rel="noopener noreferrer">Home</a></li>
+            <li class="top-list"><a href="stars.html" target="_blank" rel="noopener noreferrer">Stars</a></li>
+            <li class="top-list"><a href="about.html" target="_blank" rel="noopener noreferrer">About Us</a></li>
+            <li class="top-list"><a href="planets.html" target="_blank" rel="noopener noreferrer">Planets</a></li>
+            <li class="top-list"><a href="missions.html" target="_blank" rel="noopener noreferrer">Space Missions</a></li>
+            <li class="top-list"><a href="moon.html" target="_blank" rel="noopener noreferrer">The Moon</a></li>
+            <li class="top-list"><a href="sun.html" target="_blank" rel="noopener noreferrer">Earth’s Sun</a></li>
+        </ul>
+    </nav>
+<div id = "allPage">
+        
+    <div id = "wrapper">
+        <header>
+            <h2 >Feedback from <br> readers </h2>
+    
+            <p> Welcome again to <em> the feedback area</em>Please feel free to put any comments of your expercience with this paper and incase you have anymore information to add please feel free to contact us</p>
+    
+    
+        </header>
+    
+
+        
+
+            <form id = "allForm">
+                <div id = "buyerDetails">
+                  <fieldset>
+                    <legend> Readers</legend>
+                    <p id = "panel1">
+                        <label for="firstName"> First Name:</label><input type="text"name="firstName" id="firstName" onchange = "firstNameValidator()" size="20" min = "2" required></p> <!-- required forces data entry -->
+                      <p id = "boogie"><label for="secondName"> Second Name:</label><input type="text" name="secondNameX" id="secondNameX" onchange = "secondNameValidatorChanger()"  size="20" required></p>
+                    <p><label for="secondName"> Second Name:</label><input type="text" name="secondName" id="secondName" onchange = "secondNameValidatorChanger()"  size="20" required></p>
+                    <p><label for="email"> Email Address:</label><input type="email" name="email" id="email" onchange = "emailValidator()" size="20" required></p>
+                    
+                    
+                    
+    
+                </fieldset> 
+                </div>
+                
+                
+                <!-- This is the div where the output will be shown. It will be inititally hidden. -->
+               
+               
+                    <legend> Feedback box</legend>
+                    <p><label for="message"> Type your message to gift recipient (max. 300 characters):</label><br>
+                        <textarea rows = "3" cols = "40"  maxlength = "300" id = "personalMessage"> </textarea></p>
+                
+                
+                </fieldset> 
+                <fieldset>
+                <button id =submitForm >Submit <br> Details</button>
+                <button id =resetForm onclick="resetFormAll()">Reset <br> Form</button>  
+                </fieldset>
+            </form>
+        <footer>
+        <p>For personal inqueries<br>Please contact<br>0892394567</p>
+        </footer>
+   </div> 
+</div>
+</body>
